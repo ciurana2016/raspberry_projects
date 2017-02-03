@@ -11,5 +11,3 @@ Arduino to py:
 
 Relay stuff:
 * [relay_loop.py](https://youtu.be/tFbMXxz2_xI)
-
-## X
