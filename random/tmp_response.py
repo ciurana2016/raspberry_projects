@@ -17,7 +17,7 @@ servo.start(12.5)
 # Our program 
 try:
     tmp = commands.getoutput('/opt/vc/bin/vcgencmd measure_temp')
-    tmp = flaot(tmp[5:][:-2])
+    tmp = float(tmp[5:][:-2])
     if tmp > 42.0:
         servo.ChangeDutyCycle(15.5) # Servo down
         time.sleep(2)
@@ -27,7 +27,7 @@ try:
         time.sleep(1.5)
         servo.stop()
 
-except KeyboardInterrup:
+except KeyboardInterrupt:
 	pass
 
 # Reset servo
